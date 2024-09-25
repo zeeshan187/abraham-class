@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Montserrat", sans-serif;
+    box-sizing: border-box;
+}
+
+/* .parent {
+    min-height: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: 0px auto;
+}
+
+.content {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+}
+
+.content h2 {
+    font-size: 40px;
+}
+
+.content p {
+    font-size: 25px;
+}
+
+button {
+    font-size: 20px;
+    padding: 2px 10px;
+}
+
+.parent img {
+    width: 45%;
+}
+
+
+@media screen and (max-width:800px) {
+    .parent {
+        flex-direction: column;
+        gap: 50px;
+        margin-top: 50px;
+    }
+
+    .content {
+        width: 90%;
+        text-align: center;
+        align-items: center;
+    }
+
+    .parent img {
+        width: 70%;
+    }
+
+    .content h2 {
+        font-size: 25px;
+    }
+
+    .content p {
+        font-size: 15px;
+    }
+} */
+
+
+.parent{
+    width: 100px;
+    height: 100px;
+    background-color: red; 
+    /* animation: name duration timing-function delay iteration-count direction fill-mode;
+    animation-name: our-animation ;
+    animation-iteration-count: 1;
+    animation-duration: 3s;
+    
+   
+    animation-timing-function: ease-in-out; */
+    /* animation-delay: 2s; */
+    /* animation-direction: alternate;
+    animation-fill-mode: backwards; */
+    animation: our-animation 3s ease-in-out 1s infinite alternate backwards ;
+    /* position: absolute; 
+    
+    top: 0px;
+    left: 0px; */
+}
+
+@keyframes our-animation {
+    0%{
+        /* top: 0px;
+        left: 0px; */
+        width: 0%;
+    }
+    /* 25%{
+        left: 0px;
+        top: 90%;
+    }
+    50%{
+        left: 90%;
+        top: 90%;
+    }
+    75%{
+        left: 90%;
+        top: 0px;
+    } */
+    100%{
+        /* left: 0px;
+        top: 0px; */
+        width: 100%;
+    }
+}
