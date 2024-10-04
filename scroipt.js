@@ -1,6 +1,6 @@
-let age = 20;
-let name = "abarahan";
-let country = "USA";
+// let age = 20;
+// let name = "abarahan";
+// let country = "USA";
 // console.log("My Name is " , name , " And my Age is ", age, "and my country is ", country );
 
 // console.log(`My name is ${name} My age is: ${age} and my country is ${country}`);
@@ -29,10 +29,40 @@ let country = "USA";
 
 
 
-let array1=[10,20,30]
-let array2=[40,50,60]
-let array3=[...array1, ...array2]
+// let array1=[10,20,30]
+// let array2=[40,50,60]
+// let array3=[...array1, ...array2]
 
-console.log(...array3);
+// console.log(...array3);
+
+
+// let data=["Zeeshan", 23, "Pakistan"]
+// let [name, age, country]=data;
+// console.log(age);
+
+// object destruturing
+// let data={
+//     age:23,
+//     name:"zeeshan",
+//     country:"Pakistan"
+// }
+// let {age, name, country}=data;
+// console.log(name);
+
+// let function1=(()=>{
+
+// })
+
+// creatig api--> backend
+// integrating api--> frontend
+
+
+let data=fetch('https://jsonplaceholder.typicode.com/todos/')
+.then((resp)=>resp.json())
+.then((data)=>console.log(data))
+.catch((err)=>{
+    console.log(err);
+})  
+
 
 
